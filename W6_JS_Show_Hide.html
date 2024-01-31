@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Show/Hide Image</title>
+    <script>
+        function toggleImageVisibility() {
+            var imgDiv = document.getElementById('img');
+            var checkbox = document.getElementById('toggleImageCheckbox');
+
+            if (checkbox.checked) {
+                imgDiv.style.display = 'block';  // Show the image
+            } else {
+                imgDiv.style.display = 'none';   // Hide the image
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>
+        <p>Click below to Hide or Show the Image</p>
+        <input type="checkbox" id="toggleImageCheckbox" onchange="toggleImageVisibility()"> Show/Hide the Image
+    </label>
+
+    <div id="img" style="position: absolute; top: 115px; left: 0;">
+        <img src="Back.jpg" alt="NOT found">
+    </div>
+</body>
+</html>
