@@ -1,4 +1,5 @@
 <?xml-stylesheet type="text/css" href="Student.css" ?>
+<!DOCTYPE student SYSTEM "student.dtd">
 <students>
     <student>
         <id>1</id>
