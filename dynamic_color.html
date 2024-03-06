@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title> Dynamic Colours </title>
+    <script>
+        function setColour(position, newColour) {
+            if (position == "background") {
+                document.body.style.backgroundColor = newColour;
+            }
+
+            else {
+                document.body.style.color = newColour;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Today wad exam</p>
+    <form action="">
+        <label>Background colour: <input type="text"
+                    onchange="setColour('background',this.value)" /></label>
+                    <br/>
+        <label>Foreground colour: <input type="text"
+                    onchange="setColour('foreground',this.value)" /></label>
+    </form>
+</body>
+</html>
