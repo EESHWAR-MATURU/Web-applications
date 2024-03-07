@@ -1,18 +1,23 @@
 <html>
 <head>
-    <title>Dynamic Fonts</title>
+    <title>Dynamic Font Changer</title>
 </head>
 <body>
-    <div id="content">
-        <h1 id="dynamicText">Hello, Dynamic Fonts!</h1>
-        <button onclick="changeFont()">Change Font</button>
-    </div>
+    <h2>Dynamic Font Changer</h2>
+    <form id="fontForm">
+        <label for="fontInput">Enter Font Name:</label><br>
+        <input type="text" id="fontInput" name="fontInput"><br>
+        <button type="submit">Change Font</button>
+    </form>
+    <div id="fontText">Today there is a wad exam</div>
     <script>
-        function changeFont() {
-            var fonts = ["Arial", "Times New Roman", "Courier New", "Verdana", "Georgia"];
-            var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
-            document.getElementById("dynamicText").style.fontFamily = randomFont;
-        }
+        document.getElementById('fontForm').addEventListener('submit',
+        function (event) {
+            event.preventDefault();
+            var fontName = document.getElementById('fontInput').value;
+            var fontText = document.getElementById('fontText');
+            fontText.style.fontFamily = fontName;
+        });
     </script>
 </body>
 </html>
