@@ -1,0 +1,31 @@
+<html>
+<body>
+    <div class="main">
+        <form>
+            <label for="email">Email:</label>
+            <input type="text" id="email" onfocus="displayConstraints('email')">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" onfocus="displayConstraints('password')">
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" onfocus="displayConstraints('username')">
+            <br>
+            <br>
+            <input type="submit" value="Register">
+        </form>
+        <input type="text" name="constraints" id="constraints" readonly>
+    </div>
+    <script>
+        const constraints = {
+            username: 'Username must be between 4 and 10 characters.',
+            email: 'Please enter a valid email address.',
+            password: 'Password must be at least 8 characters long.'
+        };
+        function displayConstraints(field) {
+            const constraintsElement = document.getElementById(`constraints`);
+            constraintsElement.value = constraints[field];
+        }
+    </script>
+</body>
+</html>
