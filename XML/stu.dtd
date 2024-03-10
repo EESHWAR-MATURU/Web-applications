@@ -1,0 +1,5 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (sname, spin, cgpa)>
+<!ELEMENT spin (#PCDATA)>
+<!ELEMENT sname (#PCDATA)>
+<!ELEMENT cgpa (#PCDATA)>

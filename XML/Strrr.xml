@@ -1,0 +1,16 @@
+<?xml-stylesheet type = "text/css" href = "planes.css" ?>
+<!DOCTYPE student SYSTEM "planes.dtd">
+<planes_for_sale>
+    <ad>
+    <year> 1977 </year>
+    <make> cessna </make>
+    <model> Skyhawk </model>
+    <color> Light blue and white </color>
+    <description> New paint, nearly new interior, 685 hours SMOH, full IFR King avionics</description>
+    <seller phone = "555-222-3333"> Skyway Aircraft </seller>
+    <location>
+        <city> Rapid City, </city>
+        <state> South Dakota </state>
+    </location>
+    </ad>
+</planes_for_sale>

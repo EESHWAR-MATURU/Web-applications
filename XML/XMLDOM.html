@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="xmlData"></div>
+    <script>
+        var xmlString = "<library>" +
+            "<book>" +
+            "<title>Harry Potter and the Sorcerer's Stone</title>" +
+            "<author>J.K. Rowling</author>" +
+            "<year>1997</year>" +
+            "</book>" +
+            "<book>" +
+            "<title>The Great Gatsby</title>" +
+            "<author>F. Scott Fitzgerald</author>" +
+            "<year>1925</year>" +
+            "</book>" +
+            "</library>";
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(xmlString, "text/xml");
+        var library = xmlDoc.documentElement;
+        var books = library.getElementsByTagName("book");
+        var xmlDataDiv = document.getElementById("xmlData");
+        var html = "<ul>";
+        for (var i = 0; i < books.length; i++) {
+            var title = books[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            var author = books[i].getElementsByTagName("author")[0].childNodes[0].nodeValue;
+            var year = books[i].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+            html += "<li>Title: " + title + ", Author: " + author + ", Year: " + year + "</li>";
+        }
+        html += "</ul>";
+        xmlDataDiv.innerHTML = html;
+    </script>
+</body>
+</html>

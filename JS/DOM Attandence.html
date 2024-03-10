@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Today's Class Strength:</title>
+</head>
+<body>
+    <h1>Class Attendance</h1>
+    <form onsubmit="return calculateClassStrength();">
+        <label for="totalStrength">Total Strength:</label>
+        <input type="number" id="totalStrength" name="totalStrength"/>
+        <br/>
+        <label for="absentees">Absentees:</label>
+        <input type="number" id="absentees" name="absentees"/>
+        <br/>
+        <label for="presentees">Presentees:</label>
+        <input type="number" id="presentees" name="presentees"/>
+        <br/>
+        <label for="classStrength">Today's Class Strength:</label>
+        <input type="text" id="classStrength" name="classStrength"/>
+        <br/>
+        <br/>
+        <input type="submit" value="Calculate"/>
+    </form>
+    <script>
+        function calculateClassStrength() 
+        {
+            let totalStrength = document.getElementById("totalStrength").value;
+            let absentees = document.getElementById("absentees").value;
+            let presentees = document.getElementById("presentees").value;
+            let classStrength = totalStrength - absentees;
+            document.getElementById("classStrength").value = classStrength;
+            document.getElementById("presentees").value = classStrength;
+            return false;
+        }
+    </script>
+</body>
+</html>

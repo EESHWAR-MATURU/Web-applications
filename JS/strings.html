@@ -1,0 +1,30 @@
+<html>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>Different types of strings</h2>
+    <p>Output :</p>
+    <p id = "js"></p>
+    <p id = "sj"></p>
+    <p id = "rr"></p>
+    <p id = "ww"></p>
+    <p id = "ff"></p>
+    <p id = "uu"></p>
+    <p id = "ss"></p>
+    <script>
+        let text = "eeshwar";
+        let text1 = "thanks";
+        let text2 = "over";
+        let text3 = "INDIA";
+        let text4 = "Australia";
+        let text5 = "I am fine";
+        let text6 = "Where are you going";
+        document.getElementById("js").innerHTML = text.length;
+        document.getElementById("sj").innerHTML = text1.substring(2,5);
+        document.getElementById("rr").innerHTML = text2.toUpperCase();
+        document.getElementById("ww").innerHTML = text3.toLowerCase();
+        document.getElementById("ff").innerHTML = text4.concat((" ", text4));
+        document.getElementById("uu").innerHTML = text5.charAt(3);
+        document.getElementById("ss").innerHTML = text6.indexOf("you");
+    </script>
+</body>
+</html>

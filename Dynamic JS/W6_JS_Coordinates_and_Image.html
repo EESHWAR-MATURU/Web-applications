@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Coordinates Manipulation of an Image</title>
+        <script>
+            function moveIt(img,newtop,newleft)
+            {
+                var a=document.getElementById(img).style;
+                a.top=newtop + "px";
+                a.left=newleft + "px";
+            }
+        </script>
+
+    </head>
+    <body>
+        <form>
+            <p>
+                <label>X-Coordinate: <input type = "text" id="leftCoord" size = "4"/></label><br><br>
+                <label>Y-Coordinate: <input type = "text" id="topCoord" size = "4"/></label><br><br>
+
+                <input type = "button" value = "Move It" onclick= "moveIt('img',document.getElementById('topCoord').value,
+                                                                                document.getElementById('leftCoord').value)">
+            </p>
+        </form> 
+
+        <div id = "img" style = "position: absolute; top: 115 px; left:0; ">
+            <img src = "w.jpg" alt= "NOT found">
+        </div>
+    </body>
+</html>

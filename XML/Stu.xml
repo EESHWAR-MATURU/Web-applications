@@ -1,0 +1,23 @@
+<?xml-stylesheet href="stu.xsl" type="text/xsl"?>
+<student-info>
+    <student>
+        <sname>Eeshwar</sname>
+        <spin>HU21CSEN0100731</spin>
+        <cgpa>8.2</cgpa>
+    </student>
+    <student>
+        <sname>Lalit</sname>
+        <spin>HU21CSEN0101246</spin>
+        <cgpa>7</cgpa>
+    </student>
+    <student>
+        <sname>Shreya</sname>
+        <spin>HU21CSEN0100569</spin>
+        <cgpa>7.4</cgpa>
+    </student>
+    <student>
+        <sname>Amith</sname>
+        <spin>HU21CSEN0101132</spin>
+        <cgpa>7</cgpa>
+    </student>
+</student-info>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing Visibility</title>
+  <style>
+    .toggle-button {
+      margin-bottom: 10px;
+    }
+
+    .hide-me {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="toggleButton" class="toggle-button">Toggle Visibility</button>
+  <div id="hideMe" class="hide-me">This element can be hidden/shown.</div>
+
+  <script>
+    var toggleButton = document.getElementById('toggleButton');
+    var hideMeElement = document.getElementById('hideMe');
+
+    toggleButton.addEventListener('click', function () {
+      if (hideMeElement.style.display === 'none') {
+        hideMeElement.style.display = 'block';
+      } 
+      else {
+        hideMeElement.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>

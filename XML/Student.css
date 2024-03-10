@@ -1,0 +1,31 @@
+id {
+    display: block;
+    color: blue;
+    font-size: 30pt;
+}
+name {
+    display: block;
+    color: red;
+    font-size: 27pt;
+}
+email {
+    display: block;
+    color: purple;
+    font-size: 27pt;
+}
+phoneno {
+    display: block;
+    color: yellow;
+    font-size: 20pt;
+}
+age {
+    display: block;
+    color: green;
+    font-size: 20pt;
+}
+
+grade {
+    display: block;
+    color: orange;
+    font-size: 16pt;
+}
