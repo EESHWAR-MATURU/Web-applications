@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-contoller="myCtrl">
+        <button ng-click="count = count+1">Click me </button>
+        <p>{{count}}</p>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.count = 0;
+        });
+    </script>
+</body>
+</html>
