@@ -12,11 +12,14 @@
         app.controller('myCtrl', function ($scope) {
             $scope.firstname = 'Eeshwar';
             $scope.changeName = function () {
-                $scope.firstname = 'AA';
+                var newName = prompt('Enter the new name:');
+                if (newName !== null && newName !== '') {
+                    $scope.firstname = newName;
+                }
             }
         });
     </script>
-    <p>Click on the header to run the changename function</p>
-    <p>This example demostrate how to use the controller to change model data</p>
+    <p>Click on the header to run the changeName function</p>
+    <p>This example demonstrates how to use the controller to change model data</p>
 </body>
 </html>
