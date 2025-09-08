@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book Index Layout</title>
+    <style>
+        /* Splitting page into two halves */
+        .split {
+            height: 100%;
+            position: fixed;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        /* Left side */
+        .left {
+            width: 20%;
+            left: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        /* Right side */
+        .right {
+            width: 80%;
+            right: 0;
+            background-color: gray;
+            padding: 20px;
+        }
+
+        /* Styling list links */
+        #links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #links li {
+            margin: 15px 0;
+        }
+
+        #links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LEFT SPLIT -->
+    <div class="split left">
+        <ul id="links" style="list-style-type:none;">
+            <li><a href="#overview" id="link1">
+                    <p>HTML5 OVERVIEW</p>
+                </a></li>
+            <li><a href="#syntax" id="link2">
+                    <p>HTML5 SYNTAX</p>
+                </a></li>
+            <li><a href="#attributes" id="link3">
+                    <p>HTML5 ATTRIBUTES</p>
+                </a></li>
+            <li><a href="#events" id="link4">
+                    <p>HTML5 EVENTS</p>
+                </a></li>
+            <li><a href="#forms" id="link5">
+                    <p>HTML5 WEB FORMS 2.0</p>
+                </a></li>
+            <li><a href="#advd" id="link6">
+                    <p>HTML5 AUDIO & VIDEO</p>
+                </a></li>
+        </ul>
+    </div>
+
+    <!-- RIGHT SPLIT -->
+    <div class="split right">
+        <header>
+            <h2>Table of Contents</h2>
+        </header>
+
+        <ol>
+            <li>
+                <p id="overview">HTML5 OVERVIEW</p>
+                <ul>
+                    <li>
+                        <p>Browser Support</p>
+                    </li>
+                    <li>
+                        <p>New Features</p>
+                    </li>
+                    <li>
+                        <p>Backward Compatibility</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <p id="syntax">HTML5 SYNTAX</p>
+                <ul>
+                    <li>
+                        <p>The DOCTYPE</p>
+                    </li>
+                    <li>
+                        <p>Character Encoding</p>
+                    </li>
+                    <li>
+                        <p>The script tag</p>
+                    </li>
+                    <li>
+                        <p>The link tag</p>
+                    </li>
+                    <li>
+                        <p>HTML5 Elements</p>
+                    </li>
+                    <li>
+                        <p>HTML5 Attributes</p>
+                    </li>
+                    <li>
+                        <p>HTML5 Document</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <p id="attributes">HTML5 ATTRIBUTES</p>
+                <ul>
+                    <li>
+                        <p>Standard Attributes</p>
+                    </li>
+                    <li>
+                        <p>Custom Attributes</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <p id="events">HTML5 EVENTS</p>
+            </li>
+
+            <li>
+                <p id="forms">HTML5 WEB FORMS 2.0</p>
+                <ul>
+                    <li>
+                        <p>The input element in HTML4</p>
+                    </li>
+                    <li>
+                        <p>The input element in HTML5</p>
+                    </li>
+                    <li>
+                        <p>The output element</p>
+                    </li>
+                    <li>
+                        <p>The placeholder attribute</p>
+                    </li>
+                    <li>
+                        <p>The autofocus attribute</p>
+                    </li>
+                    <li>
+                        <p>The required attribute</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <p id="advd">HTML5 AUDIO & VIDEO</p>
+                <ul>
+                    <li>
+                        <p>Embedding Video</p>
+                    </li>
+                    <li>
+                        <p>Video Attribute Specification</p>
+                    </li>
+                    <li>
+                        <p>Embedding Audio</p>
+                    </li>
+                    <li>
+                        <p>Audio Attribute Specification</p>
+                    </li>
+                    <li>
+                        <p>Handling Media Events</p>
+                    </li>
+                    <li>
+                        <p>Configuring Servers for Media Type</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
